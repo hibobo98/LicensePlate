@@ -10,6 +10,8 @@ object_name = "LicensePlate"
 
 # Run YOLO 
 def run_yolo(input_video_url):
+
+    os.makedirs('./video/out', exist_ok=True)
     
     # model define
     model = YOLO(f'./weights/pd_base.pt')
